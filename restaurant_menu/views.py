@@ -15,20 +15,18 @@ class MenuListDetail(generic.DetailView):
     template_name = "menu_item_detail.html"
 
 
+# django will detects all html files inside "templates" folder/directory inside app directory,
+#if templates directory will placed somewhere else other than inside app directory then in settings.py (project)
+# mention/include ' in here as below
+#   TEMPLATES = [
+#     {templates'
+#         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+#         'DIRS': [templates'],            # Here include as name of template directory
+#         'APP_DIRS': True,
+
 
 # two types of pages, 1.ListView -ex menu meals list,or front page of blog,which will have many links
 #                     2.DetailView- ex details about that particular meal
-
-
-
-
-
-
-
-
-
-
-
 
 
 

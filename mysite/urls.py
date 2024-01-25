@@ -14,8 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',include('restaurant_menu.urls'))   # here we are registering our app in project and refering to restaurant_menu/urls file
 ]
+
+
+# here ''this empty string means www.goole.com/about
+#if its for ex 'whatever' then we need to access our app pages like www.google.com/whatever/about
